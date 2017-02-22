@@ -42,10 +42,13 @@ Define a mask function.
 
 ###2. Identify potential shortcomings with your current pipeline
 
+- Algorithm shortcomings:
 
-One potential shortcoming would be what would happen when ... 
+-- The masking parameters are just defined as fixed varibles.
 
-Another shortcoming could be ...
+-- Code Engineering shortcomings:
+
+- The varibles are passed through the frames are global variables. These will cause unexpected troubles in debugging in the future.
 
 
 ###3. Suggest possible improvements to your pipeline
