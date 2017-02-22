@@ -13,30 +13,24 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
----
 
 ### Reflection
 
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-
-This is how it works:
 Covert RGB image to gray scale image.
+
 Use Gaussian Blur to smooth the image.
+
 Run the Canny edge detection.
+
 Convert the edge to Hough space.
+
 Define a mask function.
+
+Average the lines from Hough output lines.
+
+Draw the lane on the image
 
 
 
@@ -53,6 +47,6 @@ Define a mask function.
 
 ###3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+- The challenge video is not working for the current algorithm
+- Dynamic masking function.
+- Fitting 3 degree ploynomial line functions from Hough lines output
