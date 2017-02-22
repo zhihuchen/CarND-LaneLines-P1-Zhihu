@@ -17,6 +17,8 @@
 
 * Average the lines from Hough output lines.
 
+* Line polynomial are smoothed from the previous frames. Here a smoothing filter is applied.
+
 * Draw the lane on the image
 
 
@@ -25,9 +27,9 @@
 
 - Algorithm shortcomings:
 
--- The masking parameters are just defined as fixed varibles.
+- The masking parameters are just defined as fixed varibles.
 
--- Code Engineering shortcomings:
+- Code Engineering shortcomings:
 
 - The varibles are passed through the frames are global variables. These will cause unexpected troubles in debugging in the future.
 
