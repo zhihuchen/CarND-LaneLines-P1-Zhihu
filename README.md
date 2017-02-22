@@ -1,9 +1,9 @@
 #**Finding Lane Lines on the Road** 
 
 
-### Reflection
+### Reflection (Writeup)
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. Description of the pipeline 
 
 * Covert RGB image to gray scale image.
 
@@ -25,18 +25,18 @@
 
 
 
-###2. Identify potential shortcomings with your current pipeline
+###2.Potential shortcomings of the pipeline
 
 - Algorithm shortcomings:
 
-- The masking parameters are just defined as fixed varibles.
+ - The masking parameters are just defined as fixed varibles.
 
 - Code Engineering shortcomings:
 
-- The varibles are passed through the frames are global variables. These will cause unexpected troubles in debugging in the future.
+ - The varibles are passed through the frames are global variables. These will cause unexpected troubles in debugging in the future.
 
 
-###3. Suggest possible improvements to your pipeline
+###3. Possible improvements 
 
 - The challenge video is not working for the current algorithm
 
