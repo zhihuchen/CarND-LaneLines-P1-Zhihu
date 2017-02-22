@@ -15,7 +15,9 @@
 
 * Define a mask function.
 
-* Average the lines from Hough output lines.
+* Average the lines from Hough output lines. Here one polynomial is derived from the average to denote the left and right lane.
+
+* draw_line() function then will draw the new averaged left and right lines.
 
 * Line polynomial are smoothed from the previous frames. Here a smoothing filter is applied.
 
